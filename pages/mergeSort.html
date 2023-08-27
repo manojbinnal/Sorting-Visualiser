@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge Sort</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./styleForSort.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar-heading">
+            <p>Sort Visualiser</p> 
+        </div>
+        <a class="toggle-button">
+            <span class="tbar"></span>
+            <span class="tbar"></span>
+            <span class="tbar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li> <a href="./bubbleSort.html">Bubble Sort</a></li>
+                <li><a href="./selectionSort.html">Selection Sort</a></li>
+                <li><a href="./insertionSort.html">Insertion Sort</a></li>
+                <li><a href="./quickSort.html">Quick Sort</a></li>
+                 <li><a href="#">Merge Sort</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h3 class=" "> 🔴 Merge Sort Visualiser<br/>(❗️This visualiser is not working...)</h3>
+        <div class="topButtons ">
+            <Button class="btn" onclick="NewBars()">New Array</Button>
+            <Button class="btn" onclick="mergeStart()" >Start </Button>
+            <!-- <Button class="btn" onclick="stop()" >Stop</Button> -->
+        </div>
+        Delay: <input  type="number" name="delay" id="delay" value="50" min="10"  >
+        Array Size: <input type="number" name="size" id="size" value="50" min="0" max="50" >
+
+    </div>
+    <div id="bars">
+     
+    </div>
+    <div class="sorting-info">
+        <div class="sorting_contents">
+            <h2>Merge Sort</h2>
+           
+            <p>Merge sort is a sorting algorithm that uses the divide-and-conquer strategy to sort an array. The basic idea behind this algorithm is to divide the array into two smaller arrays, sort them separately, and then merge them back together in a sorted order.
+            </p>
+            <p>The merge sort algorithm can be implemented in C using the following steps:</p>
+            <br/>
+            <ol>
+                <li>If the array has only one element, return it as it is already sorted.</li>
+                <li>Divide the array into two halves.</li>
+                <li>Recursively sort the left half of the array.</li>
+                <li>Recursively sort the right half of the array.</li>
+                <li>Merge the two sorted halves of the array back together in a sorted order.</li>
+            </ol>
+            <p>Here is an example implementation of the merge sort function in C:</p>
+            <img src="../Images/mergeSortCode.png" alt="merge sort code" class="codeIMG">
+           <p>The mergeSort function takes in 3 parameters: an array "arr", left index "l" and right index "r" and it will sort the array between these indexes. The merge function takes the same parameters, it takes the array and the two indexes, left and right and will merge the array between these indexes. This way we can recursively divide the array into smaller parts using mergeSort function and merge them back together using merge function.</p>
+        </div>
+       </div>
+</body>
+<script src="../js files/SortingAlgos/SortingAlgos.js"></script>
+<script src="../js files/script.js"></script>
+</html>

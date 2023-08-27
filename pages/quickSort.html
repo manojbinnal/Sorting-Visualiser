@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Sort</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./styleForSort.css">
+    <link rel="shortcut icon" href="../Images/logo.png" type="image/x-icon">
+
+</head>
+<body>
+    <nav>
+        <div class="navbar-heading">
+            <p>Sort Visualiser</p> 
+        </div>
+        <a class="toggle-button">
+            <span class="tbar"></span>
+            <span class="tbar"></span>
+            <span class="tbar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li> <a href="./bubbleSort.html">Bubble Sort</a></li>
+                <li><a href="./selectionSort.html">Selection Sort</a></li>
+                <li><a href="./insertionSort.html">Insertion Sort</a></li>
+                <li><a href="#">Quick Sort</a></li>
+                 <li><a href="./mergeSort.html">Merge Sort</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h3 class=" ">🔴 Quick Sort Visualiser</h3>
+        <div class="topButtons ">
+            <Button class="btn" onclick="NewBars()">New Array</Button>
+            <Button class="btn" onclick="quickStart()" >Start </Button>
+            <!-- <Button class="btn" onclick="stop()" >Stop</Button> -->
+        </div>
+        Delay: <input  type="number" name="delay" id="delay" value="100" min="10"  >
+        Array Size: <input type="number" name="size" id="size" value="50" min="0" max="50" >
+
+    </div>
+    <div id="bars">
+     
+    </div>
+    <div class="sorting-info">
+        <div class="sorting_contents">
+            <h2>Quick Sort</h2>
+            <p>QuickSort is a divide-and-conquer algorithm for sorting. It works by partitioning the input array into two smaller sub-arrays, one containing elements that are less than a chosen "pivot" element, and the other containing elements that are greater than or equal to the pivot. The pivot is typically chosen as the last element in the array, but it can be chosen randomly or from any other position in the array as well.</p>
+            <p>The algorithm then recursively sorts the two sub-arrays, and combines them back together in the correct order.</p>
+            <p>Here's an example of how the quicksort algorithm works in C:</p>
+            
+            <img src="../Images/quickSortCode.png" alt="bubble sort code" class="codeIMG">
+
+            <p>The partition function is the core of quicksort and it uses the pivot element to partition the array into two parts: one part containing elements less than the pivot and the other part containing elements greater than or equal to the pivot.</p>
+            <p>The quicksort function then recursively calls itself on the two partitions, one before the pivot and one after the pivot.</p>
+
+            <p>The time complexity of quicksort is <mark>O(n log n)</mark> on average, but it can be <mark>O(n^2)</mark>  in the worst case when the pivot is chosen poorly. However, this can be avoided by choosing a good pivot, such as the median of the array.</p>
+
+            <p>quicksort is an unstable sort, meaning it may not preserve the relative order of elements with equal keys. It's also an in-place sort, meaning it doesn't require any extra space.</p>
+
+            <p>It's a fast and efficient sorting algorithm, especially for large data sets. It's also widely used in practice, and is the sorting algorithm used in the C standard library qsort() function.</p>
+            
+        </div>
+       </div>
+</body>
+<script src="../js files/SortingAlgos/SortingAlgos.js"></script>
+<script src="../js files/script.js"></script>
+</html>

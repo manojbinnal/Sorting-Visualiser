@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertion Sort</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./styleForSort.css">
+    <link rel="shortcut icon" href="../Images/logo.png" type="image/x-icon">
+
+</head>
+<body>
+    <nav>
+        <div class="navbar-heading">
+            <p>Sort Visualiser</p> 
+        </div>
+        <a class="toggle-button">
+            <span class="tbar"></span>
+            <span class="tbar"></span>
+            <span class="tbar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li> <a href="./bubbleSort.html">Bubble Sort</a></li>
+                <li><a href="./selectionSort.html">Selection Sort</a></li>
+                <li><a href="#">Insertion Sort</a></li>
+                <li><a href="./quickSort.html">Quick Sort</a></li>
+                 <li><a href="./mergeSort.html">Merge Sort</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h3 class=" "> 🔴 Insertion Sort Visualiser</h3>
+        <div class="topButtons ">
+            <Button class="btn" onclick="NewBars()">New Array</Button>
+            <Button class="btn" onclick="bubbleSort()" >Start </Button>
+            <!-- <Button class="btn" onclick="stop()" >Stop</Button> -->
+        </div>
+        Delay: <input  type="number" name="delay" id="delay" value="50" min="10"  >
+        Array Size: <input type="number" name="size" id="size" value="50" min="0" max="50" >
+
+    </div>
+    <div id="bars">
+     
+    </div>
+    <div class="sorting-info">
+        <div class="sorting_contents">
+            <h2>Insertion Sort</h2>
+            <p>Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time. It repeatedly selects the next item from the input array, and then insert it into the correct position in the sorted array.</p>
+            
+            <p>Here's an example of how the insertion sort algorithm works in C:
+            </p>
+
+            <img src="../Images/insertionSortCode.png" alt="bubble sort code" class="codeIMG">
+            <p>The outer loop iterates over the entire array, and the inner loop iterates over the sorted portion of the array (the portion of the array that has been sorted so far).</p>
+
+            <p>In each pass through the inner loop, the algorithm compares the current element with the elements in the sorted portion of the array and insert it into the correct position.</p>
+
+            <p>The time complexity of insertion sort is<mark>O(n^2)</mark> in the worst and average case, but it is <mark>O(n) </mark>in the best case when the input array is already sorted. It's efficient on small data sets or nearly sorted data sets.</p>
+
+            <p>Insertion sort is a stable sort which means that it preserves the relative order of elements with equal keys. It is also an in-place sort, meaning it doesn't require any extra space.</p>
+
+            <p>It's a good choice for small data sets, or when the input data is mostly sorted. It can also be used as a step in other sorting algorithms, such as shell sort.</p>
+        </div>
+       </div>
+</body>
+<script src="../js files/SortingAlgos/SortingAlgos.js"></script>
+<script src="../js files/script.js"></script>
+</html>

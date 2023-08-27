@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Sort</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./styleForSort.css">
+    <link rel="shortcut icon" href="../Images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="navbar-heading">
+            <p>Sort Visualiser</p> 
+        </div>
+        <a class="toggle-button">
+            <span class="tbar"></span>
+            <span class="tbar"></span>
+            <span class="tbar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li> <a href="#">Bubble Sort</a></li>
+                <li><a href="./selectionSort.html">Selection Sort</a></li>
+                <li><a href="./insertionSort.html">Insertion Sort</a></li>
+                <li><a href="./quickSort.html">Quick Sort</a></li>
+                 <li><a href="./mergeSort.html">Merge Sort</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h3 class=" ">🔴 Bubble Sort Visualiser</h3>
+        <div class="topButtons ">
+            <Button class="btn" onclick="NewBars()">New Array</Button>
+            <Button class="btn" onclick="bubbleSort()" >Start </Button>
+            <!-- <Button class="btn" onclick="stop()" >Stop</Button> -->
+        </div>
+        Delay: <input  type="number" name="delay" id="delay" value="50" min="10"  >
+        Array Size: <input type="number" name="size" id="size" value="50" min="0" max="50" >
+
+    </div>
+    <div id="bars">
+     
+    </div>
+    <div class="sorting-info">
+        <div class="sorting_contents">
+            <h2>Bubble Sort</h2>
+            <p>Bubble sort is a simple sorting algorithm that repeatedly steps through a list of elements, compares adjacent elements, and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.</p>
+            <p>
+                The algorithm works by repeatedly comparing adjacent elements of the list and swapping them if they are in the wrong order. The largest element "bubbles" to the end of the list in each pass, until the list is sorted.
+            </p>
+            <p>Code in C:</p>
+            <img src="../Images/bubbleSortCode.png" alt="bubble sort code" class="codeIMG">
+            <p>The outer loop iterates over the entire array, and the inner loop iterates over the unsorted portion of the array (the portion of the array that has not yet been sorted).</p>
+            <p>In each pass through the inner loop, the algorithm compares the current element with the next element in the list. If the current element is greater than the next element, the two elements are swapped.</p>
+            <p>This process is repeated for all the elements in the list, and in each pass, the largest element "bubbles" to the end of the list.</p>
+            <p>The time complexity of bubble sort is <mark>O(n^2)</mark>  in the worst and average case and it takes <mark> O(n)</mark>  in the best case scenario when the list is already sorted.</p>
+            <p>Bubble sort is not an efficient algorithm for large data sets, but it can be useful for small data sets or for educational purposes to understand the concept of sorting.</p>
+            
+        </div>
+       </div>
+       
+</body>
+<script src="../js files/SortingAlgos/SortingAlgos.js"></script>
+<script src="../js files/script.js"></script>
+</html>

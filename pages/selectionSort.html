@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Sort</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./styleForSort.css">
+    <link rel="shortcut icon" href="../Images/logo.png" type="image/x-icon">
+
+</head>
+<body>
+    <nav>
+        <div class="navbar-heading">
+            <p>Sort Visualiser</p> 
+        </div>
+        <a class="toggle-button">
+            <span class="tbar"></span>
+            <span class="tbar"></span>
+            <span class="tbar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li> <a href="./bubbleSort.html">Bubble Sort</a></li>
+                <li><a href="#">Selection Sort</a></li>
+                <li><a href="./insertionSort.html">Insertion Sort</a></li>
+                <li><a href="./quickSort.html">Quick Sort</a></li>
+                 <li><a href="./mergeSort.html">Merge Sort</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h3 class=" ">🔴 Selection Sort Visualiser</h3>
+        <div class="topButtons ">
+            <Button class="btn" onclick="NewBars()">New Array</Button>
+            <Button class="btn" onclick="selectionSort()" >Start </Button>
+            <!-- <Button class="btn" onclick="stop()" >Stop</Button> -->
+        </div>
+        Delay: <input  type="number" name="delay" id="delay" value="50" min="10"  >
+        Array Size: <input type="number" name="size" id="size" value="50" min="0" max="50" >
+
+    </div>
+    <div id="bars">
+     
+    </div>
+    <div class="sorting-info">
+        <div class="sorting_contents">
+            <h2>Selection Sort</h2>
+            <p>Selection sort is a simple sorting algorithm that repeatedly selects the smallest (or largest) element from the unsorted portion of the list and places it at the end of the sorted portion.</p>
+            <p>Here's an example of how the selection sort algorithm works in C:</p>
+
+            <img src="../Images/selectionSortCode.png" alt="selection sort code" class="codeIMG">
+
+            <p>The outer loop iterates over the entire array, and the inner loop iterates over the unsorted portion of the array (the portion of the array that has not yet been sorted).</p>
+
+            <p>In each pass through the inner loop, the algorithm 
+                selects the smallest element in the unsorted portion of the array and places it at the end of the sorted portion.</p>
+
+            <p>The time complexity of selection sort is <mark>O(n^2)</mark>  in the worst and average case. It is not efficient for large data sets, but it can be useful for small data sets or for educational purposes to understand the concept of sorting.</p>
+            <p>It could be also useful in some scenarios where memory is a constraint, as it requires only constant amount of memory and doesn't require any extra space.</p>
+
+        </div>
+       </div>
+</body>
+<script src="../js files/SortingAlgos/SortingAlgos.js"></script>
+<script src="../js files/script.js"></script>
+</html>
